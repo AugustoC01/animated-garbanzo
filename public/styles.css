@@ -51,7 +51,6 @@
   width: 60vw;
   text-align: initial;
 }
-
 .user {
   font-weight: bold;
   color: blue;
@@ -67,8 +66,7 @@
   max-width: 5rem;
   border-radius: 2rem;
 }
-
-.chat-input {
+.form-input {
   font-size: 1rem;
   padding: 0.3rem;
   border: 0.1rem solid #ccc;
@@ -85,6 +83,44 @@
 .btn:hover {
   background-color: grey;
   border: solid grey;
+}
+
+/* ESTILO DEL LOGIN */
+.login-div {
+  width: 50vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: lightgray;
+  padding: 2rem;
+  margin: 5rem auto;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+.login-input {
+  border: solid darkorange;
+  border-width: 0 0 0.2rem 0;
+  margin: 0.5rem;
+}
+.log-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: lightgreen;
+  color: darkgreen;
+}
+.logout-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: lightblue;
+  color: blue;
 }
 
 /* ESTILO DEL FOOTER */

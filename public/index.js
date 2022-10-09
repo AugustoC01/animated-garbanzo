@@ -18,19 +18,6 @@ const denormalizeMsg = (data) => {
   return denormalizeData;
 };
 
-/* const chatData = denormalizedChat.chats.reduce(
-  (chatMsgs, newMsg) =>
-    chatMsgs +
-    `
-  <tr>
-  <td> <p class='user'>${newMsg.author.id}</p> </td>
-  <td> <p class='date'>[${newMsg.timestamp}] :</p> </td>
-  <td> <p class='msg'>${newMsg.text}<p/> </td>
-  <td> <img class='avatar' src="${newMsg.author.avatar}" alt="avatar"> </td>
-  </tr>`,
-  ''
-); */
-
 socket.on('chatData', (data) => {
   const denormalizedChat = denormalizeMsg(data);
   const chatData = denormalizedChat.chats.reduce(function (chatMsgs, newMsg) {
