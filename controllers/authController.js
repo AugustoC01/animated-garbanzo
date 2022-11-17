@@ -1,21 +1,11 @@
 let name;
 
 const login = (req, res) => {
-  res.status(200).render('mainLogin', {
-    title: 'Ingresar',
-    submitAction: 'login',
-    redirectAction: 'signup',
-    redirectBtn: 'Registrarse',
-  });
+  res.status(200).render('mainLogin', { login: true });
 };
 
 const signup = (req, res) => {
-  res.status(200).render('mainLogin', {
-    title: 'Registrarse',
-    submitAction: 'signup',
-    redirectAction: 'login',
-    redirectBtn: 'Ingresar',
-  });
+  res.status(200).render('mainLogin', { login: false });
 };
 
 const accessRedirect = (req, res) => {

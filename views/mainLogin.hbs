@@ -1,5 +1,9 @@
 {{>navbar}}
 
+{{#if login}}
 {{>loginForm}}
+{{else}}
+{{>signUpForm}}
+{{/if}}
 
 {{>footer}}
