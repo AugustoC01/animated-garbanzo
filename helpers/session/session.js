@@ -1,10 +1,10 @@
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
-const { MONGO_URL } = require('../../config');
+const { MONGO_URL_USERS: URL } = require('../../config');
 
 const sessionConfig = session({
   store: MongoStore.create({
-    mongoUrl: MONGO_URL,
+    mongoUrl: URL,
     mongoOptions: {
       useNewUrlParser: true,
       useUnifiedTopology: true,

@@ -31,12 +31,12 @@ app.use(compression());
 app.use(passport.initialize());
 app.use(passport.session());
 // -------ROUTERS-------
-app.use(infoLogger);
+// app.use(infoLogger);
 app.use(authRouter);
 app.use(infoRouter);
 app.use(prodsRouter);
 app.use(randomRouter);
-app.use(notImplemented);
+// app.use(notImplemented);
 // -------HBS CONFIG-------
 app.set('view engine', 'hbs');
 app.set('views', './views');

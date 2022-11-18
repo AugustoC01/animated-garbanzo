@@ -9,7 +9,7 @@ const signup = (req, res) => {
 };
 
 const accessRedirect = (req, res) => {
-  name = req.user.username;
+  name = req.user.name;
   res.status(200).redirect('/api/products-test');
 };
 

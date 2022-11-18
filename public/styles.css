@@ -88,14 +88,14 @@
 /* ESTILO DEL LOGIN */
 .login-div {
   width: 50vw;
-  height: 20vh;
+  height: 45vh;
   display: flex;
   flex-direction: row;
   background-color: lightgray;
   padding: 2rem;
   margin: 5rem auto;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .input-div {
   display: flex;

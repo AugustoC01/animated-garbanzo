@@ -14,6 +14,6 @@ const config = {
   client_x509_cert_url: process.env.FirebaseClient_x509_cert_url,
 };
 
-const MONGO_URL = process.env.MONGO_URL;
+const MONGO_URL_USERS = process.env.MONGO_URL_USERS;
 
-module.exports = { config, MONGO_URL };
+module.exports = { config, MONGO_URL_USERS };

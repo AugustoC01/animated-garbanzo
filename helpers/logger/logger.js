@@ -2,7 +2,7 @@ const winston = require('winston');
 
 let logger = winston.createLogger({
   transports: [
-    new winston.transports.Console({ level: 'info' }),
+    new winston.transports.Console({ name: 'info-log', level: 'info' }),
     new winston.transports.File({
       name: 'warn-log',
       filename: './logs/warn.log',
